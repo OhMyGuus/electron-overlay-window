@@ -62,7 +62,10 @@ jobs:
           merge-multiple: true
           path: prebuilds
 
+      - name: Archive prebuilds
+        run: tar -czf prebuilds.tar.gz -C prebuilds .
+
       - name: Attach prebuilds to release
         uses: softprops/action-gh-release@v2
         with:
-          files: prebuilds/**/*.node
+          files: prebuilds.tar.gz
