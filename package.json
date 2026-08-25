@@ -33,7 +33,8 @@
     "dist/index.js",
     "dist/index.js.map",
     "binding.gyp",
-    "src/lib",
+    "src",
+    "tsconfig.json",
     "prebuilds"
   ],
   "devDependencies": {
