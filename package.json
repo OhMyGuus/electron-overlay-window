@@ -20,12 +20,12 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "install": "node-gyp rebuild && yarn build-ts",
+    "install": "node-gyp rebuild && npm run build-ts",
     "build32": "node-gyp clean configure build --arch=ia32",
     "build64": "node-gyp clean configure build --arch=x64",
     "prebuild": "prebuildify --napi",
     "build-ts": "tsc",
-    "demo:electron": "node-gyp build && yarn build-ts && electron dist/demo/electron-demo.js"
+    "demo:electron": "node-gyp build && npm run build-ts && electron dist/demo/electron-demo.js"
   },
   "files": [
     "dist/index.d.ts",
@@ -36,20 +36,19 @@
     "prebuilds"
   ],
   "devDependencies": {
-    "@types/node": "12.x.x",
-    "@types/throttle-debounce": "2.x.x",
-    "electron": "10.x.x",
-    "prebuildify": "4.x.x",
-    "ts-node": "9.x.x"
+    "@types/node": "^24.9.0",
+    "@types/throttle-debounce": "5.x.x",
+    "electron": "^44.0.0",
+    "prebuildify": "6.x.x"
   },
   "dependencies": {
     "node-gyp-build": "4.x.x",
-    "throttle-debounce": "3.x.x",
-    "typescript": "^4.7.3"
+    "throttle-debounce": "5.x.x",
+    "typescript": "^7.0.2"
   },
   "gypfile": true,
   "engines": {
-    "node": ">= 12"
+    "node": ">= 18"
   },
   "peerDependencies": {
     "electron": ">= 10"

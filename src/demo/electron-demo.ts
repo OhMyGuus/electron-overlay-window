@@ -1,5 +1,5 @@
 import { app, BrowserWindow, globalShortcut } from 'electron'
-import { overlayWindow } from '../'
+import { overlayWindow } from '../index.js'
 
 // https://github.com/electron/electron/issues/25153
 app.disableHardwareAcceleration()

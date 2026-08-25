@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
     "target": "ES2018",
+    "module": "node16",
+    "moduleResolution": "node16",
     "alwaysStrict": true,
     "strict": true,
-    "module": "CommonJS",
-    "moduleResolution": "node",
+    "rootDir": "src",
     "sourceMap": true,
     "outDir": "dist",
     "declaration": true
