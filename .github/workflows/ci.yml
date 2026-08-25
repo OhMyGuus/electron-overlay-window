@@ -38,6 +38,10 @@ jobs:
       - name: Build prebuilds
         run: npm run prebuild
 
+      - name: Build ia32 prebuilds (Windows)
+        if: runner.os == 'Windows'
+        run: npm run prebuild:ia32
+
       - name: Upload prebuilds
         uses: actions/upload-artifact@v4
         with:

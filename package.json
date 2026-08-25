@@ -24,6 +24,7 @@
     "build32": "node-gyp clean configure build --arch=ia32",
     "build64": "node-gyp clean configure build --arch=x64",
     "prebuild": "prebuildify --napi",
+    "prebuild:ia32": "prebuildify --napi --arch ia32",
     "build-ts": "tsc",
     "demo:electron": "node-gyp build && npm run build-ts && electron dist/demo/electron-demo.js"
   },
