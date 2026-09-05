@@ -1,6 +1,6 @@
 {
   "name": "electron-overlay-window",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "author": {
     "name": "Alexander Drozdov"
   },
@@ -41,12 +41,12 @@
     "@types/node": "^24.9.0",
     "@types/throttle-debounce": "5.x.x",
     "electron": "^44.0.0",
-    "prebuildify": "6.x.x"
+    "prebuildify": "6.x.x",
+    "typescript": "^7.0.2"
   },
   "dependencies": {
     "node-gyp-build": "4.x.x",
-    "throttle-debounce": "5.x.x",
-    "typescript": "^7.0.2"
+    "throttle-debounce": "5.x.x"
   },
   "gypfile": true,
   "engines": {
